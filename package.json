@@ -58,7 +58,8 @@
             "vite": "^6.3.6"
       },
       "scripts": {
-            "dev": "vite",
-            "build": "vite build"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
       }
 }
