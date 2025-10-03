@@ -1,8 +1,14 @@
-[
-    {
-        "type": "command",
-        "details": {
-            "key": "editor.action.fixAll"
-        }
-    }
-]
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Type = "text/javascript"
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Handle SPA routing
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
