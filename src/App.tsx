@@ -10,7 +10,6 @@ import { MarsArea } from './pages/MarsArea';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState<'home' | 'lunar' | 'mars'>('home');
-  const [pipeConnected, setPipeConnected] = useState(false);
 
   const handleLunarConnection = () => {
     setCurrentPage('lunar');
@@ -21,7 +20,7 @@ export default function App() {
   };
 
   const handlePipeConnected = () => {
-    setPipeConnected(true);
+    // setPipeConnected(true); // removed unused state update
   };
 
   const handleReturnToArena = () => {

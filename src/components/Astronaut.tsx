@@ -19,7 +19,7 @@ export function Astronaut({ onPipeConnected }: AstronautProps) {
     collect: (monitor) => ({
       isDraggingPipe: monitor.isDragging(),
     }),
-    end: (item, monitor) => {
+    end: (_, monitor) => {
       setIsDragging(false);
       if (monitor.didDrop()) {
         onPipeConnected();
