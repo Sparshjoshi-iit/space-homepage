@@ -69,7 +69,7 @@ export function LunarArea({ onReturnToArena }: LunarAreaProps) {
             textShadow: '0 0 20px rgba(59, 130, 246, 0.8)',
           }}
         >
-          Welcome to Lunar Area
+          Welcome to the Lunar Area
         </motion.h1>
         
         <motion.p
@@ -82,24 +82,33 @@ export function LunarArea({ onReturnToArena }: LunarAreaProps) {
         </motion.p>
 
         <motion.div
-          className="space-y-4"
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 1 }}
-        >
-          <Button 
-            onClick={() => window.open('http://localhost:8000/nasa_lunar.html', '_blank')}
-            className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg mb-4"
-          >
-            Explore Further
-          </Button>
-          <Button 
-            onClick={onReturnToArena}
-            className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg"
-          >
-            Return to Arena
-          </Button>
-        </motion.div>
+  className="space-y-4"
+  initial={{ opacity: 0, scale: 0.8 }}
+  animate={{ opacity: 1, scale: 1 }}
+  transition={{ delay: 1 }}
+>
+  <Button 
+    onClick={() => window.open('http://localhost:8000/nasa_lunar.html', '_blank')}
+    className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg mb-4"
+  >
+    Explore Further
+  </Button>
+
+  <Button 
+    onClick={() => window.open('/lunar3d', '_self')}   // 👈 NEW BUTTON
+    className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg mb-4"
+  >
+    Interact with 3D Moon
+  </Button>
+
+  <Button 
+    onClick={onReturnToArena}
+    className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg"
+  >
+    Return to Arena
+  </Button>
+</motion.div>
+
 
         {/* Lunar rover animation */}
         <motion.div

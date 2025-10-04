@@ -28,7 +28,7 @@ export default function App() {
   };
 
   if (currentPage === 'lunar') {
-    return <LunarArea onReturnToArena={handleReturnToArena} />;
+    return <LunarArea />;
   }
 
   if (currentPage === 'mars') {
