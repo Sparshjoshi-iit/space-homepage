@@ -88,7 +88,7 @@ export function LunarArea({ onReturnToArena }: LunarAreaProps) {
           transition={{ delay: 1 }}
         >
           <Button 
-            onClick={() => window.open('https://frabjous-stroopwafel-f4cbc1.netlify.app/', '_blank')}
+            onClick={() => window.open('http://localhost:8000/nasa_lunar.html', '_blank')}
             className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-lg mb-4"
           >
             Explore Further
