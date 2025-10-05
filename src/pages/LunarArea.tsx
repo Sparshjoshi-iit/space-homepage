@@ -98,7 +98,7 @@ export function LunarArea({ onReturnToArena }: LunarAreaProps) {
     onClick={() => window.open('/lunar3d', '_self')}   // 👈 NEW BUTTON
     className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg mb-4"
   >
-    Interact with 3D Moon
+    Interact with 3D Moon 
   </Button>
 
   <Button 
