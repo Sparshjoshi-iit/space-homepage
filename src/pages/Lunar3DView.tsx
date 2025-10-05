@@ -1,5 +1,5 @@
 // src/pages/ThreeDView.tsx
-import React, { lazy, Suspense } from 'react';
+import  { lazy, Suspense } from 'react';
 
 // Dynamically import the MoonCanvas for better performance
 const MoonCanvas = lazy(() => import('@/components/MoonCanvas'));
